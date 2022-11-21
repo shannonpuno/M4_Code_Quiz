@@ -1,7 +1,9 @@
+
 body{
     font-family: Trebuchet MS, sans-serif;
     margin: 0;
     display: flex;
+    align-items: center;
     flex-direction: column;
     min-height: 100vh;
     justify-content: flex-start;
@@ -32,9 +34,39 @@ button {
     transition-property: background-color;
     transition-timing-function: linear;
     margin-top: 0.6em;
+    list-style: none;
 }
 
 .viewScores {
-    float:left;
+    float:right;
     
+}
+
+
+.quizBox {
+    width: 550px;
+    height: 250px;
+    padding: 50px;
+    background-color: #943bba;
+    flex-direction: column;
+    border: 2px #1e002b;
+    align-items: center;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+
+#question-text {
+    padding: 14px;
+    color:#1e002b;
+    font-size: medium;
+}
+
+#check-ans{
+    color: #1e002b;
+}
+
+
+.hide {
+    display: none;
 }

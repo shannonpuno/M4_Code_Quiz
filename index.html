@@ -10,17 +10,50 @@
 
     <body>
         <header>
-            <button class="viewScores" id="scores"> View High Scores</button>
+            <button class="scores_Btn"> View High Scores</button>
             <h1 class="large-font">JavaScript Quiz Challenge</h1>
                 <p class="align-text">This quiz asks about JavaScript fundamentals. Do your best to answer within the time limit. Keep in mind answers you get wrong will affect your overall highscore.</p>
-                <button class ="start-button" id = "startQuiz">Start</button>
-        
         </header>
 
         <main>
+                <button id= "start" class ="mainBtn" onclick="startQuiz()">Start</button> 
+                <div> Time Left: <span id="timer">45</span></div>
+
+                <!--Quiz Box Where Questions will show-->
+                <div id="quizBox" class="hide">
+                    
+                        <h3  id="question-text"></h3>
+                         
+                            <div id="choices-text"></div>
+                                <button id="A" class="optionsBtn" value="a"></button>
+                                <button id="B" class="optionsBtn" value="b"></button>
+                                <button id="C" class="optionsBtn" value="c"></button>
+                            
+                        
+                        <hr id="line-break"> 
+                        <p id="check-ans"></p>
+                    
+                </div>
+                <!--User Results Box -->
+                <div id="resultsBox" class="hide">
+                    <h3>You have completed the quiz!</h3>
+                    <p>You scored: <span id="user-score"></span>/20</p>
+                    <label for="user-name">Enter your name:</label>
+                    <input type="text" id="user-name">
+                    <button class="submitBtn" id="submitBtn" onclick="storeUserScore(event)">Submit Scores</button>
+
+                    <div>
+                        <h3>High Score Board</h3>
+                        <div id="highscoreList"></div>
+                        <button class="button" id="clearBtn" onclick="clearResults()">Clear High Scores</button>
+                    </div>
+                    
+                </div>
+
+               
 
         </main>
-        <script src="assets/js/script.js"></script>
+        <script src="assets/js/script.js"></script> 
     </body>
 
 </html>
