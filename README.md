@@ -1,31 +1,14 @@
-# M4_Code_Quiz
+# Code_Quiz
 
-## User Story
-AS A coding boot camp student
+## Description
 
-I WANT to take a timed quiz on JavaScript fundamentals that stores high scores
+This is a timed quiz JavaScript fundamentals, user is given a starting page with instructions on how to play. Then after hitting the start button, a 45 second timer will start and user will be prompted multiple choice questions. For every answer they get wrong, the time will decrease by 5 seconds for every answer user gets right they will earn 5 points. After the time runs out, or the user finishes the quiz they will be shown their total score, and prompted to input their name to be added to the score board. Once they submit their scores, user will be able to see the scoreboard. 
 
-SO THAT I can gauge my progress 
+This project was made to grow my understanding of WebAPI's and and further my JavaScript skills. This project runs in the browser and was written with HTML,CSS, and JavaScript. 
 
-## Acceptance Criteria
-GIVEN I am taking a code quiz
+## Usage
 
-WHEN I click the start button
+Link to Deployed app: https://shannonpuno.github.io/M4_Code_Quiz/
 
-THEN a timer starts and I am presented with a question
 
-WHEN I answer a question
 
-THEN I am presented with another question
-
-WHEN I answer a question incorrectly
-
-THEN time is subtracted from the clock
-
-WHEN all questions are answered or the timer reaches 0
-
-THEN the game is over
-
-WHEN the game is over
-
-THEN I can save my initials and score
